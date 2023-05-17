@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        // This is a depth stack by z
+        ZStack {
+            // This is a vertical stack, so it's stacked in order vertically
+            VStack {
+                Image("fuji")
+                    .imageScale(.large)
+                     .foregroundColor(.accentColor)
+                Text("Welcome to Japan!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+            }
+
         }
-        .padding()
     }
 }
 
